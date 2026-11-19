@@ -1,9 +1,7 @@
-
 services:
   mongodb:
     image: mongo:8.0
     container_name: mongodb
-    restart: always
     ports:
       - "27017:27017"
     environment:
@@ -13,4 +11,4 @@ services:
       - mongodb_data:/data/db
 
 volumes:
-  mongodb_data:
+  mongodb_data:  
